@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="dbz.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/kid.jpg" type="image/jpg">
+        <source media="(max-width: 1000px)" srcset="imagens/mid.jpg" type="image/jpg">
+        <img src="imagens/end.jpg" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a repoduzir áudios em HTML5</p>
+    <audio src="midia/musicateste.mp3" controls></audio> <!-- Formatos aceitos MP3 WAV OGG-->
+    <audio preload="metadata" controls>
+        <source src="midia/musicateste.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue repoduzir o áudio <a href="midia/musicateste.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio009</title>
+     <style>
+    body {
+      text-align: center; /* centraliza o título */
+      font-family: Arial, sans-serif;
+      background-color:gray;
+    }
+
+    .galeria {
+      display: flex;
+      justify-content: center; /* centraliza as imagens na horizontal */
+      flex-wrap: wrap;         /* quebra linha se faltar espaço */
+      gap: 20px;               /* espaçamento entre as imagens */
+      margin-top: 30px;
+    }
+
+    .galeria img {
+      width: 200px; /* ou qualquer tamanho que você desejar */
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05); /* efeito ao passar o mouse */
+    }
+  </style>
+</head>
+<body>
+    <h1>Videos legais para assistir</h1>
+
+    <div class="galeria">
+        <a href="cursohtml.html"><img src="Imagens/thumb-html.png" alt="CursoHTML5"></a>
+
+        <a href="cursojava.html"><img src="Imagens/thumb-js.png" alt="CursoJavaScript"></a>
+
+        <a href="cursohardware.html"><img src="Imagens/thumb-hardware.png" alt="CursoHardware"></a>
+
+        <a href="cursopython.html"><img src="Imagens/thumb-python.png" alt="cursophyton"></a>
+    </div>
+
+</body>
+</html>
